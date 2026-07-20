@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090b16" />
+  <meta name="description"
+    content="Przewodnik po vibe codingu – zamień pomysł w działający kod z pomocą agentów AI. Poznaj ścieżkę, narzędzia i zasady." />
+  <title>VIBE//SHIFT – kod, który rusza z miejsca</title>
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Vibe Shift – początek strony"><span>VIBE</span><i>//</i>SHIFT</a>
+    <nav class="desktop-nav" aria-label="Główna nawigacja">
+      <a href="#journey">Ścieżka</a>
+      <a href="#agents">Agenci</a>
+      <a href="#principles">Zasady</a>
+    </nav>
+    <a class="header-cta" href="#launch"><span class="header-cta-label">Zacznij budować</span><span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-orbit orbit-a" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-b" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="status-dot"></span> AI-ASSISTED CODING / 2026</p>
+        <h1 id="hero-title" class="hero-title reveal">Pisz mniej<br /><span>kodu.</span><em>Twórz więcej.</em></h1>
+        <p class="hero-lede reveal">Vibe coding zamienia pomysł w rozmowę, rozmowę w plan, a plan w coś, co naprawdę
+          działa.</p>
+        <div class="hero-actions reveal">
+          <a class="button button-primary magnetic" href="#journey">Wejdź na ścieżkę <span>↓</span></a>
+          <a class="text-link" href="#agents">Poznaj trzy podejścia <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-console reveal" aria-label="Podgląd rozmowy z agentem kodującym">
+        <div class="console-chrome"><span></span><span></span><span></span><small>session /
+            idea-to-interface</small><b>● LIVE</b></div>
+        <div class="console-body">
+          <div class="console-line muted"><span>01</span><code>human</code>
+            <p>Zbuduj landing page o klimacie nocnej jazdy po mieście.</p>
+          </div>
+          <div class="console-line agent"><span>02</span><code>agent</code>
+            <p>Łapię kierunek. Ułożę rytm, hierarchię i pierwszy działający szkic.</p>
+          </div>
+          <div class="console-line active"><span>03</span><code>build</code>
+            <p><i class="typing-bar"></i> składam komponenty<span class="blink">_</span></p>
+          </div>
+        </div>
+        <div class="console-footer"><span>context: 18 files</span><span>branch: <b>vibe/first-light</b></span></div>
+      </div>
+      <div class="hero-foot reveal"><span>SCROLL TO COMPOSE</span><span class="hero-arrow">⌄</span><span
+          class="hero-index">01 / 07</span></div>
+    </section>
+
+    <section class="manifesto section-shell">
+      <div class="section-kicker">01 – NEW DEFAULT</div>
+      <div class="manifesto-grid">
+        <h2>Najlepszy kod<br /><span>zaczyna się</span><br />od dobrego <em>„po co?”</em></h2>
+        <div class="manifesto-copy">
+          <p>Nie musisz znać każdej komendy, żeby ruszyć z miejsca. Wystarczy kierunek, trochę ciekawości i agent, który
+            potrafi zamienić nieostry pomysł w serię mądrych, odwracalnych kroków.</p>
+          <div class="signal"><span>INTENT</span><i></i><span>INTERFACE</span><i></i><span>IMPACT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="journey" class="journey section-shell" aria-labelledby="journey-title">
+      <div class="journey-head">
+        <div>
+          <div class="section-kicker">02 – THE BUILD LOOP</div>
+          <h2 id="journey-title">Od iskry<br /><span>do działającego</span> kodu.</h2>
+        </div>
+        <p class="journey-intro">Przewiń w dół. Każdy etap odsłania kolejny fragment procesu – i pokazuje, gdzie wsparcie agenta robi prawdziwą różnicę.</p>
+      </div>
+      <div class="journey-stage">
+        <div class="timeline-rail" aria-hidden="true"><svg viewBox="0 0 320 1400" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="path-gradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#d8ff65" />
+                <stop offset="38%" stop-color="#63e6e2" />
+                <stop offset="72%" stop-color="#9b7bff" />
+                <stop offset="100%" stop-color="#f58bff" />
+              </linearGradient>
+            </defs>
+            <path class="path-base"
+              d="M160 0 C125 105 195 170 160 280 S125 450 160 560 S195 730 160 840 S125 1010 160 1120 S195 1290 160 1400" />
+            <path class="path-progress"
+              d="M160 0 C125 105 195 170 160 280 S125 450 160 560 S195 730 160 840 S125 1010 160 1120 S195 1290 160 1400" />
+          </svg><span class="timeline-runner"></span><span class="timeline-endpoint"><i>✓</i></span></div>
+        <div class="timeline-progress-label"><span>BUILD<br />PROGRESS</span><strong>00</strong></div>
+        <ol class="timeline-steps">
+          <li class="timeline-step" data-step="01">
+            <div class="step-node"><span>01</span></div>
+            <article>
+              <p class="step-tag">THE SPARK</p>
+              <h3>Zacznij od efektu, nie od składni.</h3>
+              <p>Opisz, co użytkownik ma poczuć i zrobić. Agent wyłapie intencję, zada pytania i zamieni mglistą wizję w
+                konkretny zarys.</p>
+              <div class="step-art art-spark"><span class="orb"></span><span class="art-label">„pokaż mi
+                  coś<br />nieoczywistego”</span></div>
+            </article>
+          </li>
+          <li class="timeline-step" data-step="02">
+            <div class="step-node"><span>02</span></div>
+            <article>
+              <p class="step-tag">THE CONTEXT</p>
+              <h3>Daj mu mapę, zanim dasz mu zadanie.</h3>
+              <p>Dobry agent nie działa w próżni. Poznaje repo, zależności, ograniczenia i decyzje, które już zapadły –
+                żeby następny ruch był naprawdę trafiony.</p>
+              <div class="code-card"><span
+                  class="code-top">context.md</span><code><b>goal</b>: make it feel instant<br /><b>guardrail</b>: keep the API stable<br /><b>taste</b>: quiet, sharp, alive</code>
+              </div>
+            </article>
+          </li>
+          <li class="timeline-step" data-step="03">
+            <div class="step-node"><span>03</span></div>
+            <article>
+              <p class="step-tag">THE PLAN</p>
+              <h3>Najpierw plan. Potem magia.</h3>
+              <p>Zamiast wielkiego skoku – małe, sprawdzalne iteracje. Możesz zatrzymać się po każdym kroku, zmienić
+                kierunek i zachować kontrolę.</p>
+              <div class="plan-stack"><span><b>✓</b> rozbij problem</span><span><b>✓</b> wybierz najkrótszą
+                  drogę</span><span class="pending"><b>→</b> dostarcz pierwszą wersję</span></div>
+            </article>
+          </li>
+          <li class="timeline-step" data-step="04">
+            <div class="step-node"><span>04</span></div>
+            <article>
+              <p class="step-tag">THE BUILD</p>
+              <h3>Kod pojawia się w rytmie rozmowy.</h3>
+              <p>Agent pisze kod, testuje go na bieżąco i wraca z gotowym rozwiązaniem. Ty trzymasz kompas – on bierze na siebie
+                najbardziej żmudną pracę.</p>
+              <div class="build-metrics">
+                <div><strong>4.8×</strong><span>więcej iteracji</span></div>
+                <div><strong>−62%</strong><span>oporu na starcie</span></div>
+              </div>
+            </article>
+          </li>
+          <li class="timeline-step" data-step="05">
+            <div class="step-node"><span>05</span></div>
+            <article>
+              <p class="step-tag">THE PROOF</p>
+              <h3>Nie wierz na słowo. Sprawdź.</h3>
+              <p>Testy, przypadki brzegowe i review nie znikają. Po prostu zaczynają się wcześniej – zanim „prawie
+                gotowe” stanie się drogim problemem.</p>
+              <div class="proof-card"><span class="proof-check">✓</span>
+                <div><strong>quality gate passed</strong><span>12 checks · 0 blockers · ready to ship</span></div><span
+                  class="proof-spark">✦</span>
+              </div>
+            </article>
+          </li>
+          <li class="timeline-step final-step" data-step="06">
+            <div class="step-node"><span>06</span></div>
+            <article>
+              <p class="step-tag">THE SHIP</p>
+              <h3>Pomysł ma teraz adres URL.</h3>
+              <p>Najlepszy moment? Ten, w którym seria zwykłych promptów staje się działającym produktem. Masz w rękach coś, co możesz pokazać światu, przetestować i rozwijać dalej.</p><a class="button button-ghost" href="#launch">Wybierz swojego agenta
+                <span>↗</span></a>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="agents" class="agents section-shell" aria-labelledby="agents-title">
+      <div class="section-kicker">03 – PICK YOUR FLAVOR</div>
+      <div class="agents-head">
+        <h2 id="agents-title">Trzy silniki.<br /><span>Jeden twój</span> rytm.</h2>
+        <p>Nie szukaj zwycięzcy. Szukaj narzędzia, które pasuje do tego, jak myślisz i jak dowozisz.</p>
+      </div>
+      <div class="agent-grid">
+        <article class="agent-card antigravity">
+          <div class="agent-card-top"><span class="agent-number">01</span><span class="agent-mark"><svg
+                viewBox="0 0 256 256" fill="currentColor">
+                <path
+                  d="M235.54 114.42l-77.12-32-32-77.12a16 16 0 0 0-29.6 0l-32 77.12-77.12 32a16 16 0 0 0 0 29.6l77.12 32 32 77.12a16 16 0 0 0 29.6 0l32-77.12 77.12-32a16 16 0 0 0 0-29.6z" />
+              </svg></span></div>
+          <h3>Google<br /><span>Antigravity</span></h3>
+          <p class="agent-essence">Odważny pierwszy szkic.</p>
+          <p>Do odkrywania nowych kierunków, szybkiego prototypowania i sytuacji, w których jeszcze nie wiesz, czym
+            dokładnie ma być produkt.</p>
+          <div class="agent-meta"><span>BEST FOR</span><b>explorers · prototypes</b></div>
+          <div class="agent-flow"><span>pomysł</span><i>→</i><span>warianty</span><i>→</i><span>kierunek</span></div>
+        </article>
+        <article class="agent-card codex">
+          <div class="agent-card-top"><span class="agent-number">02</span><span class="agent-mark"><svg
+                viewBox="0 0 16 16" fill="currentColor">
+                <path
+                  d="M14.949 6.547a3.94 3.94 0 0 0-.348-3.273 4.11 4.11 0 0 0-4.4-1.934A4.1 4.1 0 0 0 8.423.2 4.15 4.15 0 0 0 6.305.086a4.1 4.1 0 0 0-1.891.948 4.04 4.04 0 0 0-1.158 1.753 4.1 4.1 0 0 0-1.563.679A4 4 0 0 0 .554 4.72a3.99 3.99 0 0 0 .502 4.731 3.94 3.94 0 0 0 .346 3.274 4.11 4.11 0 0 0 4.402 1.933c.382.425.852.764 1.377.995.526.231 1.095.35 1.67.346 1.78.002 3.358-1.132 3.901-2.804a4.1 4.1 0 0 0 1.563-.68 4 4 0 0 0 1.14-1.253 3.99 3.99 0 0 0-.506-4.716m-6.097 8.406a3.05 3.05 0 0 1-1.945-.694l.096-.054 3.23-1.838a.53.53 0 0 0 .265-.455v-4.49l1.366.778q.02.011.025.035v3.722c-.003 1.653-1.361 2.992-3.037 2.996m-6.53-2.75a2.95 2.95 0 0 1-.36-2.01l.095.057L5.29 12.09a.53.53 0 0 0 .527 0l3.949-2.246v1.555a.05.05 0 0 1-.022.041L6.473 13.3c-1.454.826-3.311.335-4.15-1.098m-.85-6.94A3.02 3.02 0 0 1 3.07 3.949v3.785a.51.51 0 0 0 .262.451l3.93 2.237-1.366.779a.05.05 0 0 1-.048 0L2.585 9.342a2.98 2.98 0 0 1-1.113-4.094zm11.216 2.571L8.747 5.576l1.362-.776a.05.05 0 0 1 .048 0l3.265 1.86a3 3 0 0 1 1.173 1.207 2.96 2.96 0 0 1-.27 3.2 3.05 3.05 0 0 1-1.36.997V8.279a.52.52 0 0 0-.276-.445m1.36-2.015-.097-.057-3.226-1.855a.53.53 0 0 0-.53 0L6.249 6.153V4.598a.04.04 0 0 1 .019-.04L9.533 2.7a3.07 3.07 0 0 1 3.257.139c.474.325.843.778 1.066 1.303.223.526.289 1.103.191 1.664zM5.503 8.575 4.139 7.8a.05.05 0 0 1-.026-.037V4.049c0-.57.166-1.127.476-1.607s.752-.864 1.275-1.105a3.08 3.08 0 0 1 1.098-.204Z" />
+              </svg></span></div>
+          <h3>ChatGPT<br /><span>Codex</span></h3>
+          <p class="agent-essence">Zadania dowiezione do końca.</p>
+          <p>Do pracy zadaniowej w realnym repozytorium: od planu i zmian w wielu plikach po testy, review i porządek po
+            wdrożeniu.</p>
+          <div class="agent-meta"><span>BEST FOR</span><b>teams · shipping</b></div>
+          <div class="agent-flow"><span>ticket</span><i>→</i><span>diff</span><i>→</i><span>merge</span></div>
+        </article>
+        <article class="agent-card claude">
+          <div class="agent-card-top"><span class="agent-number">03</span><span class="agent-mark"><svg
+                viewBox="0 0 75 60" fill="currentColor" fill-rule="evenodd">
+                <path
+                  d="M0 60 L20 0 L35 0 L55 60 L40 60 L36 48 L19 48 L15 60 Z M27.5 22.5 L23 36 L32 36 Z M40 0 L55 0 L75 60 L60 60 Z" />
+              </svg></span></div>
+          <h3>Claude<br /><span>Code</span></h3>
+          <p class="agent-essence">Głębokie zanurzenie w kontekście.</p>
+          <p>Do dużych refaktorów, czytania obcego systemu i spokojnego przechodzenia przez złożone zależności bez
+            gubienia sensu.</p>
+          <div class="agent-meta"><span>BEST FOR</span><b>systems · depth</b></div>
+          <div class="agent-flow"><span>kontekst</span><i>→</i><span>model</span><i>→</i><span>clarity</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="principles" class="principles section-shell">
+      <div class="section-kicker">04 – THE HUMAN EDGE</div>
+      <div class="principles-layout">
+        <h2>Agent przyspiesza.<br /><span>Ty decydujesz,</span><br />dokąd.</h2>
+        <div class="principles-list">
+          <article><span>01</span>
+            <div>
+              <h3>Intent over syntax</h3>
+              <p>Najcenniejszą umiejętnością nie jest już perfekcyjna znajomość składni, lecz precyzyjne nazwanie
+                oczekiwanego rezultatu.</p>
+            </div>
+          </article>
+          <article><span>02</span>
+            <div>
+              <h3>Small loops, real feedback</h3>
+              <p>Krótka pętla: pomysł → wynik → korekta. Dzięki niej produkt uczy się razem z tobą.</p>
+            </div>
+          </article>
+          <article><span>03</span>
+            <div>
+              <h3>Stay in the driver's seat</h3>
+              <p>Sprawdzaj, pytaj „dlaczego?”, czytaj diff. Szybkość jest super, dopóki wiesz, dokąd jedziesz.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="launch" class="launch section-shell">
+      <div class="launch-glow" aria-hidden="true"></div>
+      <p class="eyebrow">READY WHEN YOU ARE</p>
+      <h2>Zamień „kiedyś”<br />na <em>dzisiaj.</em></h2>
+      <p>Wybierz swojego agenta. Podrzuć mu jeden pomysł. Zobacz, jak wiele potrafi zmienić jedna dobra rozmowa.</p>
+      <div class="launch-actions"><a class="button button-primary magnetic" href="#agents">Porównaj podejścia
+          <span>↑</span></a><a class="button button-ghost" href="#top">Wróć na start <span>↗</span></a></div>
+      <div class="launch-signature"><span>VIBE//SHIFT</span><span>made for the curious</span><span>07 / 07</span></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 VIBE//SHIFT</span><span>Human taste. Machine speed.</span><a href="#top">↑
+      back to top</a></footer>
+</body>
+
+</html>
